@@ -30,6 +30,7 @@
     </div>
     <div id="msg" style="border: none; clear:both;"></div>
     <div id="mes"></div>
+    <div id="mssg"></div>
     <script>
         var rndNumber = parseInt(Math.random() * 100) + 1;
         //alert(rndNumber);
@@ -71,7 +72,35 @@
             }
         }
 
-        document.write(sum);
+        document.write(sum + "<br/>");
+        //------------------------------------------3의배수합계
+        var arrNames = [];
+
+        arrNames[0] = "홍길동";
+        arrNames[1] = "전우치";
+        arrNames[2] = "홍길순";
+        arrNames[3] = "이순신";
+        arrNames[4] = "강감찬";
+
+        for(var i = 0; i < 5; i++) {
+            document.write(arrNames[i]);
+        }
+
+        var strResult ="";
+        var arrNames = [];
+
+        arrNames[0] = "홍길동";
+        arrNames[1] = "전우치";
+        arrNames[2] = "홍길순";
+        arrNames[3] = "이순신";
+        arrNames[4] = "강감찬";
+
+        for(i = 1; i <= 5; i++) {
+            strResult += "<div>" + arrNames[i-1] + "</div>";
+        }
+
+        document.getElementById("mssg").innerHTML = strResult;
+
     </script>
 </body>
 </html>
