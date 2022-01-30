@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
    <style>
-       div{
+      /* div{
            border: 1px solid pink;
            width: 50px;
            float:left
@@ -15,7 +15,7 @@
            border: 1px solid orange;
            width: 500px;
            height: 300px;
-       }
+       } */
    </style>
    
    <title>Document</title>
@@ -102,14 +102,105 @@
         document.getElementById("mssg").innerHTML = strResult;
         //-------------------------------------------이름나열*/
         
-       for(i = 1; i <= 5; i++) {
+      /* for(i = 1; i <= 5; i++) {
             for(j = 1; j <= 5; j++) {
                 document.write(i + " * " + j + " = " + (i * j));
             }
             document.write("<br/>");
-       }
+       } */
        //--------------------------------------------구구단
     
     </script>
+<!--
+    <div id="msg"></div>-->
+    <script>
+        /*var strHTML = "";
+
+        var addSum = 0;
+        var minSum = 0;
+
+        for(i = 0; i <= 100; i++) {
+            if(i % 2 == 0) {
+                addSum = addSum + i;
+            } else {
+                minSum = minSum + i;
+            }
+        }
+
+        strHTML += "<div> 짝수의 합 : " + addSum + "</div>";
+        strHTML += "<div> 홀수의 합 : " + minSum + "</div>";
+
+    
+        document.getElementById("msg").innerHTML = strHTML;*/
+        //----------------------------------------짝수와 홀수의 합
+    </script>
+
+<!--    <div id='msg'>
+        <div class='warp'>
+            <span class='col'>이름</span>
+            <span class='col'>구분</span>
+            <span class='col'>월급</span>
+            <span class='col'>보너스</span>
+        </div>
+        <div class='warp'>
+            <span class='col'>홍길동</span>
+            <span class='col'>계약직</span>
+            <span class='col'>1000</span>
+            <span class='col'>0</span>
+        </div>
+    </div>-->
+
+     <script>
+         /*var strHTML = "";
+
+         var arrNames = ["홍길동", "홍길순", "전우치", "김강인", "김성구", "김굴주", "강기수"];
+         var arrPos = ["계약직", "정규직", "정규직", "알바", "정규직", "계약직", "&nbsp"];
+         var arrPay = [1000, 1000, 1000, 500, 1000, 1000, 0];
+         var arrPer = [10, 10, 10, 0, 10, 10, 0];
+
+         strHTML += "<div class='warp'>";
+         strHTML += "<span class='col'>이름</span>";
+         strHTML += "<span class='col'>구분</span>";
+         strHTML += "<span class='col'>월급</span>";
+         strHTML += "<span class='col'>보너스</span>";
+         strHTML += "</div>";
+
+         for(var i = 0; i < arrNames.length; i++) {
+            strHTML += "<div class='warp'>";
+            strHTML += "<span class='col'>" + arrNames[i] + "</span>";
+            
+                if(arrPos[i] == "정규직") {
+                    strHTML += "<span class='col' style='background-color:pink;'>" + arrPos[i] + "</span>";
+                } else if(arrPos[i] == "계약직") {
+                    strHTML += "<span class='col' style='background-color:yellow;'>" + arrPos[i] + "</span>";
+                } else {
+                    strHTML += "<span class='col' style='background-color:red;'>" + arrPos[i] + "</span>";
+                }
+            
+            strHTML += "<span class='col'>" + arrPay[i] + "</span>";
+            strHTML += "<span class='col'>" + arrPer[i] + "</span>";
+            strHTML += "</div>";
+         }
+         document.getElementById("msg").innerHTML = strHTML;*/
+         //---------------------------------------------사원 리스트(반복문 조건문 배열사용)
+     </script>
+     <!--<div id="msg"></div>-->
+     <script>
+        /* strHTML = "";
+
+            var arrNames = ["홍길동", "홍길순", "전우치", "김강인", "김성구", "김굴주", "강기수"];
+            var arrPos = ["계약직", "정규직", "정규직", "알바", "정규직", "계약직", "&nbsp"];
+            var arrPay = [1000, 1000, 1000, 500, 1000, 1000, 0];
+            var arrPer = [10, 10, 10, 0, 10, 10, 0];
+
+            for(var i = 0; i < arrNames.length; i++) {
+                if(arrPos[i] == "계약직") {
+                    document.write(arrNames[i] + "<br/>");
+                } else if(arrPos[i] == "알바") {
+                    document.write(arrNames[i] + "<br/>");
+                }
+            }*/
+        //-----------------------------------------------보너스 못 받는 사람 찾기(반복문 배열 조건문)
+    </script>            
 </body>
 </html>
