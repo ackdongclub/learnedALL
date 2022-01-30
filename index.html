@@ -222,6 +222,78 @@
             }
         }
         document.getElementById("msg").innerHTML = strHTML; */
-    </script>       
+        //-------------------------------------if와  for문을 사용해서 원하는 곳에서 다음 열으로 넘기는 연습
+    </script> 
+
+   <!-- <div id='msg'>
+        <div class='wrap'>
+            <div class='row'>
+                <div class='empty'></div>
+                <div class='content'>
+                    <span class='col1'>
+                        <span class='col11'>1</span>
+                        <span class='col11'>-</span>
+                    </span>
+                    <span class='col2'>
+                       <span>pick</span>
+                    </span>
+                    <span class='col3'>
+                        <span class='col33'>외모지상주의</span>
+                        <span class='col33'>외모지상주의1111</span>
+                    </span>
+                </div>
+                <div class='empty'></div>
+                <div class='line'></div>
+            </div>
+        </div>
+    </div>-->
+    <script>
+        /*var arrIndex = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        var arrImgs = [
+                        "😀", "😃", "😄", "😁", "😆",
+                        "😍", "🥲", "🤣", "😂", "😅",
+                    ];
+         var arrNames = [
+                        "외모 지상주의", "나 혼자 만렙 뉴비", "재혼 황후", "죽지 않으려면", "갓 오브 하이스쿨",
+                        "1초", "광마희귀", "개를 낳았다", "내과 박원장", "서울역 드루이드",
+                    ];
+        var arrInfo = [
+                        "외모 지상주의11", "나 혼자 만렙 뉴비11", "재혼 황후11", "죽지 않으려면11", "갓 오브 하이스쿨11",
+                        "1초11", "광마희귀11", "개를 낳았다11", "내과 박원장11", "서울역 드루이드11",
+                    ];   
+                    
+        strHTML = "";
+
+        for(var i = 0; i < arrIndex.length; i++) {
+            if((i+1) % 5 == 1) {
+                strHTML += "<div class='wrap'>";
+            }
+            strHTML += "<div class='row'>";
+            strHTML += "<div class='empty'>";
+            strHTML += "</div>";
+            strHTML += "<div class='content'>";
+            strHTML += "<span class='col1'>";
+            strHTML += "<span class='col11'>" + arrIndex[i] +"</span>";
+            strHTML += "<span class='col11'>-</span>";
+            strHTML += "</span>";
+            strHTML += "<span class='col2'>";
+            strHTML += "<span class='col22'>" + arrImgs[i] + "</span>";
+            strHTML += "</span>";
+            strHTML += "<span class='col3'>";
+            strHTML += "<span class='col33'>" + arrNames[i] + "</span>";
+            strHTML += "<span class='col33'>" + arrInfo[i] + "</span>";
+            strHTML += "</span>";
+            strHTML += "</div>";
+            strHTML += "<div class='empty'></div>";
+            strHTML += "<div class='line'></div>";
+            strHTML += "</div>";
+            if(i+1 % 5 == 0) {
+                strHTML += "</div>";
+            }
+        }
+
+        document.getElementById("msg").innerHTML = strHTML;*/
+        //-------------------------------------if, for, array를 사용한 웹툰 차트
+    </script>      
 </body>
 </html>
