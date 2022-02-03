@@ -246,9 +246,9 @@
                 <div class='line'></div>
             </div>
         </div>
-    </div>
+    </div>-->
     <script>
-        var arrIndex = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        /*var arrIndex = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
         var arrImgs = [
                         "😀", "😃", "😄", "😁", "😆",
                         "😍", "🥲", "🤣", "😂", "😅",
@@ -292,8 +292,128 @@
             }
         }
 
-        document.getElementById("msg").innerHTML = strHTML;
+        document.getElementById("msg").innerHTML = strHTML; */
         //-------------------------------------if, for, array를 사용한 웹툰 차트
-    </script>      
+    </script> 
+    
+    <script>
+        /* 
+        var reslut = 0;
+        for(var i = 0; i <= 100; i++){
+            reslut += i;
+        }
+
+        var i = 1;
+        while(true){
+            i += 1;
+            if(i == 100) {
+                alert(i);
+                break;
+                
+            }
+        }
+        */
+        //------------------------------조건에 맞는 값이 나오면 반복을 멈춘다.
+    </script>
+
+    <script>
+       /* function plus2(num1, num2) {
+            var reslut = num1 + num2;
+            return reslut;
+        }
+        alert(plus2(1, 2)); */
+        //-------------------------------지역번수, 전역변수 
+    </script>
+
+    <!--<div id="msg"></div>
+    <div>
+        <input type="button" value="로또번호 만들기" onclick="showLotto()" />
+    </div>-->
+    <script>
+    /*   function getLottoNumber() {
+           var lottoNumber = parseInt(Math.random() * 45) + 1;
+           return lottoNumber;
+       }
+
+       function setPrint() {
+           strHTML = "<span> " + getLottoNumber() + " </span>";
+           return strHTML;
+       }
+
+       function setLotto() {
+           var resultHTML = "";
+           for(var i = 0; i < 6; i++) {
+               resultHTML += setPrint();
+           }
+           return resultHTML;
+       }
+
+       function showLotto() {
+           document.getElementById("msg").innerHTML = setLotto();
+       }*/
+       //------------------------------------랜덤 로또 게임 함수 사용
+    </script>
+        <!--<div id="msg"></div>
+        <div id="resMSG"></div>-->
+    <script>
+        /*var num1 = parseInt(Math.random() * 45) + 1;
+        var num2 = parseInt(Math.random() * 45) + 1;
+        var plus = num1 + num2;
+
+        function showHTML() {
+            var ans = document.getElementById("ans").value;
+            var ansHTML = "";
+
+            if(ans == plus) {
+                ansHTML += "정답";
+            } else {
+                ansHTML += "오답";
+            }
+            document.getElementById("resMSG").innerHTML = ansHTML;
+        }
+
+        var strHTML = "";
+        strHTML += num1 + " + " + num2 + " = " + "<input type='text' id='ans' />";
+        strHTML += "<input type='button' value='submit' onclick='showHTML()' />";
+
+        document.getElementById("msg").innerHTML = strHTML;*/
+        //-------------------------------랜덤 덧셈 함수
+    </script>
+    <div>
+        <!--시작 숫자 : <input type="text" id="s_n" /> 
+        끝 숫자 : <input type="text" id="e_n" /> 
+    </div>
+    <div>
+        <input type="button" value="submit" onclick="showResult()" />
+    </div>
+    <div id=resMSG></div>-->
+
+    <script>
+       
+/*
+       function getSum(startNum, endNum) {
+           var result = 0;
+
+           for(var i = startNum; i < endNum; i++){
+               result += i;
+           }
+           return result;
+       }
+
+       function showResult() {
+           var startNum =
+            parseInt(Math.random() * 100) + 1;
+            var endNum = 
+            parseInt(Math.random() * 100) + 1;
+
+            var resultNumber = getSum(startNum, endNum);
+            document.getElementById('resMSG').innerHTML = resultNumber;
+       }*/
+    </script>
+
+    <script>
+        
+    </script>
+
 </body>
 </html>
